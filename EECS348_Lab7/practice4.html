@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice Four</title>
+</head>
+<body>
+    <h1>Practice Four</h1>
+
+    <form method="get" action="practice4.php">
+        <label for="number">Enter a number:</label>
+        <input type="number" name="number" id="number" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    <?php
+        if (isset($_GET["number"])) {
+            include("practice4.php");
+        }
+    ?>
+</body>
+</html>
